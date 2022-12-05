@@ -13,16 +13,10 @@ icon.addEventListener("click", () => {
 
 contentContainer.onscroll = () => {
     if(contentContainer.scrollTop > 400) {
-        if(!scrollButtonVisible) {
-            scrollButtonVisible = true
-            scrollButton.removeAttribute("hide")
-            scrollButton.setAttribute("show")
-        }
+            scrollButton.classList.remove("hide")
+            scrollButton.classList.add("show")
     } else {
-        if(scrollButtonVisible) {
-            scrollButtonVisible = false
-            scrollButton.removeAttribute("show")
-            scrollButton.setAttribute("hide")
-        }
+            scrollButton.classList.remove("show")
+            scrollButton.classList.add("hide")
     }
 }

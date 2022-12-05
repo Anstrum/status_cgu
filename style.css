@@ -1,3 +1,21 @@
+@keyframes show {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes hide {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+
 :root {
     --main-background-color: #1E384C;
     --main-background-color-secondary: #2D4F68;
@@ -89,7 +107,13 @@ main {
     transition: transform 0.2s;
     cursor: pointer;
 }
+.show {
+    animation: show 0.3s forwards;
+}
+.hide {
+    animation: hide 0.3s forwards;
 
+}
 /* #region Nav */
 
 nav {
