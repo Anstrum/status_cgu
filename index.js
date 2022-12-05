@@ -1,8 +1,28 @@
 let icon = document.querySelector(".logo");
 let scrollButton = document.querySelector(".scroll-up");
+let contentContainer = document.querySelector("content");
+
+let scrollButtonVisible = false;
 
 scrollButton.addEventListener("click", () => {
-    //scroll to the top
+    contentContainer.scrollTop = 0
+})
+icon.addEventListener("click", () => {
+    //redirect to the status website page
 })
 
-//detect the scroll to show the button
+contentContainer.onscroll = () => {
+    if(contentContainer.scrollTop > 400) {
+        if(!scrollButtonVisible) {
+            scrollButtonVisible = true
+            scrollButton.removeAttribute("hide")
+            scrollButton.setAttribute("show")
+        }
+    } else {
+        if(scrollButtonVisible) {
+            scrollButtonVisible = false
+            scrollButton.removeAttribute("show")
+            scrollButton.setAttribute("hide")
+        }
+    }
+}
