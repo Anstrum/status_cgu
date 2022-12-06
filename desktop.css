@@ -1,4 +1,4 @@
-@media (min-width: 800px) {
+@media (min-width: 801px) {
     
     body {
         display: flex;
@@ -110,9 +110,7 @@
 
     section {
         width: 95%;
-
         margin: 10px 0;
-
         border-radius: 25px;
         box-shadow: 0 0 5px rgb(0, 0, 0);
         background-color: var(--main-background-color-secondary);
@@ -135,5 +133,6 @@
         padding: 0 5%;
         margin: 10px 0;
         text-align: center;
+    }
 }
 

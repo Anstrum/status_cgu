@@ -1,13 +1,10 @@
-@media (min-width: 0) and (max-width: 800px) {
+@media (min-width: 0px) and (max-width: 800px) {
     
     body {
         display: flex;
         flex-direction: column;
         color: white;
     }
-
-
-
 
     header {
         z-index: 200;
@@ -20,9 +17,8 @@
         box-shadow: 0 0 10px black;
     }
     header h2 {
-        text-align: start;
-        width: fit-content;
-        margin:auto;
+        text-align: center;
+        width: 50%;
     }
 
     main {
@@ -109,8 +105,9 @@
     /* #endregion */
 
     content {
-        width: 80%;
-        height: 100%;
+        padding-top: 20px;
+        width: 100%;
+        height: calc(100% - 20px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -120,9 +117,7 @@
 
     section {
         width: 95%;
-
         margin: 10px 0;
-
         border-radius: 25px;
         box-shadow: 0 0 5px rgb(0, 0, 0);
         background-color: var(--main-background-color-secondary);
@@ -132,37 +127,19 @@
         width: 100%;
         margin-top: 20px;
     }
-    .section-subtitle-1 {
+    .section-subtitle-1, .section-subtitle-2 {
         position:relative;
-        width: 100%;
+        width: fit-content;
+        margin-left: 30px;
+        text-decoration: 1px underline;
         margin-top: 20px;
     }
-    .section-subtitle-2 {
-        position:relative;
-        width: 100%;
-        margin-top: 20px;
-    }
-    .section-content-1 {
+    .section-content-1, .section-content-2, .section-content-3 {
         position:relative;
         width: 90%;
         padding: 0 5%;
         margin: 10px 0;
         text-align: center;
     }
-    .section-content-2 {
-        position:relative;
-        width: 90%;
-        padding: 0 5%;
-        margin: 10px 0;
-        text-align: center;
-    }
-    .section-content-3 {
-        position:relative;
-        width: 90%;
-        padding: 0 5%;
-        margin: 10px 0;
-        text-align: center;
-    }
-
 }
 
